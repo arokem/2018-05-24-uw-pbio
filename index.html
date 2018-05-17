@@ -22,6 +22,22 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<script>
+            function canvas_arrow_two_heads(context, fromx, fromy, tox, toy){
+                let headlen = 10;   // length of head in pixels
+                let angle = Math.atan2(toy-fromy,tox-fromx);
+                context.moveTo(fromx, fromy);
+                context.lineTo(fromx+headlen*Math.cos(angle+Math.PI/6),fromy+headlen*Math.sin(angle+Math.PI/6));
+                context.moveTo(fromx, fromy);
+                context.lineTo(fromx+headlen*Math.cos(angle-Math.PI/6),fromy+headlen*Math.sin(angle-Math.PI/6));
+                context.moveTo(fromx, fromy);
+                context.lineTo(tox, toy);
+                context.lineTo(tox-headlen*Math.cos(angle-Math.PI/6),toy-headlen*Math.sin(angle-Math.PI/6));
+                context.moveTo(tox, toy);
+                context.lineTo(tox-headlen*Math.cos(angle+Math.PI/6),toy-headlen*Math.sin(angle+Math.PI/6));}
+		</script>
+
 	</head>
 	<body>
 	<div class="reveal">
@@ -33,7 +49,8 @@
 		<h2> The era of brain observatories </h2>
 		<h3><div align=middle> Challenges and opportunities for computational neuroscience </div></h3>
 		<h4>May 24th, 2018</h4>
-		<h4>The University of Washington Department of Physiology and Biophysics</h4>
+		<h4>University of Washington</h4>
+		<h4>Department of Physiology and Biophysics</h4>
 		<br>
 		<p><a href="http://arokem.org">Ariel Rokem</a>,
 		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
@@ -304,7 +321,7 @@
 			<p class="fragment">Patients can have any of a several diseases</p>
 			<p class="fragment">Patients can have more than one disease</p>
 			<div class=cite>
-				<a href="">Mehta et al. (2016)</a>
+				<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
 			</div>
 
 		</section>
@@ -312,6 +329,9 @@
 		<section>
 			<h4>Augmenting the neural network with additional patient information</h4>
 			<img src="img/multi_class_multi_label.png">
+			<div class=cite>
+				<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
+			</div>
 		</section>
 
 
@@ -428,7 +448,7 @@
 
 		</section>
 
-	<section>
+	<section id="afq-insight">
 		<h2>Opportunity: learning structure</h2>
 		<div style="position: absolute; left:40px; top 10px;">
 		<img src="img/adam.jpeg" height="300">
@@ -448,6 +468,161 @@
 
 	</section>
 
+
+		<section>
+			<h4>Normal behavior is supported by brain connectivity</h4>
+			<img src="./img/OldenDays.png" height="505">
+			<div class="cite">
+				Image from <br><a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
+			</div>
+		</section>
+
+		<section>
+			<img src="./img/optic-radiation-postmortem.png" height="505" >
+		</section>
+
+		<section>
+			<h3>Not just passive cables</h3>
+			<p class="fragment">Brain connections develop and mature with age</p>
+			<p class="fragment">Individual differences account for differences in behaviour</p>
+			<p class="fragment">Adapt and  with learning</p>
+		</section>
+
+		<section>
+			<div style="position: absolute; left: 100px;">
+				<img src="./img/optic-radiation-postmortem.png" height="505" >
+			</div>
+
+			<div class="fragment" style="position: absolute; left: 500px;">
+
+				<img src="./img/nerve-fiber.png" height="505" >
+			</div>
+
+		</section>
+
+		<section>
+			<h4>Diffusion MRI</h4>
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="arrows-iso-horiz" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('arrows-iso-horiz').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 390, 450, 590, 450);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="arrows-iso-vert" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('arrows-iso-vert').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 250, 350, 250, 150);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+
+			<div class="fragment" text-align: left>
+				Isotropic diffusion
+			</div>
+			<video width="600" autoplay loop>
+				<source src="./img/diffusion-isotropic.mp4">
+			</video>
+
+			<div style="position: absolute; left: 600px; top: 600px" >
+				<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
+			</div>
+
+		</section>
+
+		<section>
+			<h4>Diffusion MRI</h4>
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="arrows-aniso-vert" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('arrows-aniso-vert').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 250, 325, 250, 175);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="arrows-aniso-horiz" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('arrows-aniso-horiz').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 370, 400, 610, 400);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+
+			<div class="fragment" text-align:left;>
+				Anisotropic diffusion
+			</div>
+			<video width="600" autoplay loop>
+				<source src="./img/diffusion-anisotropic.mp4">
+			</video>
+			<div style="position: absolute; left: 600px; top: 600px" >
+				<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
+			</div>
+		</section>
+
+		<section>
+
+			<div class = "fragment fade-out" style="position: absolute; left: 100px;">
+				<img src="./img/optic-radiation-postmortem.png" height="505" >
+			</div>
+
+			<div style="position: absolute; left: 500px;">
+				<img src="./img/nerve-fiber.png" height="505" >
+			</div>
+
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="fiber-arrow-horiz" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('fiber-arrow-horiz').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 630, 600, 800, 600);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+
+			<div class = "fragment fade-in" style="position: absolute">
+				<canvas id="fiber-arrow-vert" width="1000" height="1000">
+				</canvas>
+				<script>
+                    context = document.getElementById('fiber-arrow-vert').getContext("2d");
+                    context.beginPath();
+                    canvas_arrow_two_heads(context, 450, 100, 450, 400);
+                    context.lineWidth = 2;
+                    context.stroke();
+				</script>
+			</div>
+
+		</section>
+
+		<section>
+			<h4>Diffusion MRI</h4>
+			<video width="600" autoplay loop>
+				<source src="./img/dMRI-signal-movie.mp4">
+			</video>
+		</section>
+
+
+
+	<section>
+		<h2>Automated Fiber Quantification (AFQ)</h2>
+
+	</section>
 	<section>
 		<h2>Automated Fiber Quantification (AFQ)</h2>
 		<img src="img/afq1.png" height="420">
@@ -690,6 +865,16 @@
 	</section>
 
 
+	<section>
+		<h2>Conclusions</h2>
+		<p class="fragment">We are entering an exciting era in computational neuroscience<p>
+		<p class="fragment">The era of brain observatories heralds both opportunities and challenges</p>
+		<p class="fragment">Captilazing on these opportunities</p>
+		<p class="fragment">and addreessing these challenges</p>
+		<p class="fragment">require new methods</p>
+		<p class="fragment">and new sociotechnical structures</p>
+	</section>
+
 
 	<section>
 
@@ -745,5 +930,6 @@
 				]
 			});
 		</script>
+
 	</body>
 </html>
