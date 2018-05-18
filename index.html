@@ -46,15 +46,17 @@
 	<section>
 		<img src="img/eScience.png" height="100px" alt="eScience logo" align="middle">
 
+		<em>
 		<h2> The era of brain observatories </h2>
 		<h3><div align=middle> Challenges and opportunities for computational neuroscience </div></h3>
+		</em>
 		<h4>May 24th, 2018</h4>
 		<h4>University of Washington</h4>
 		<h4>Department of Physiology and Biophysics</h4>
 		<br>
 		<p><a href="http://arokem.org">Ariel Rokem</a>,
 		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
-		<p>  <small>Follow along at: <t><a href=""></t></a></small></p>
+		<p>  <small>Follow along at: <t><a href="https://arokem.github.io/2018-05-24-uw-pbio/#/">https://arokem.github.io/2018-05-24-uw-pbio</t></a></small></p>
 		<img src="img/cc-by.png" height="30px" alt="License" align="middle">
 	</section>
 
@@ -85,539 +87,564 @@
 	<section data-background-image="./img/UKBiobank_Brain_Imaging.001.jpeg" data-background-size="1000px" data-background-color="black">
 	</section>
 
-
 	<section>
 		<h2>Opportunities</h2>
-		<p class="fragment">New data sets enable new analysis methods</p>
+		<p class="fragment">New data sets enable new methods</p>
 		<p class="fragment">Data-driven discovery</p>
-	</section>
-
-	<section>
-		<h2>Machine learning</h2>
-		<p class="fragment">Learning from data</p>
-		<p class="fragment">Features of the data are extracted/engineered</p>
-		<p class="fragment">Training data is used to infer model parameters</p>
-		<p class="fragment">Test data is used to evaluate accuracy</p>
 	</section>
 
 	<section>
 		<h2>Challenges</h2>
 		<p class="fragment">Methods that work in standard use may fail in large datasets</p>
+		<p class="fragment">Existing sociotechnical structures are strained <br> (training, publication, collaboration)</p>
 		<p class="fragment">Interpretation challenges</p>
 		<p class="fragment">Large-scale analysis requires large-scale computation</p>
-		<p class="fragment">Existing sociotechnical structures are strained <br> (training, publication, collaboration)</p>
 	</section>
 
+	<section>
+		<h2>Opportunity: learning from large-scale datasets</h2>
+		<div style="position: absolute; left:170px; top 10px;">
+			<img src="img/sa.jpeg" height="200">
+			<br>
+			Sa Xiao
+		</div>
+		<div style="position: absolute; left:580px; top 10px;">
+			<img src="img/aaron.jpeg" height="200">
+			<br>
+			Aaron Lee
+		</div>
+		<div style="position: absolute; left:375px; top 10px;">
+			<img src="img/parmita.jpeg" height="200">
+			<br>
+			Parmita Mehta
+		</div>
+	</section>
 
-		<section>
-			<h2>Opportunity: learning from large-scale datasets</h2>
-			<div style="position: absolute; left:170px; top 10px;">
-				<img src="img/sa.jpeg" height="200">
-				<br>
-				Sa Xiao
+	<section>
+		<h2>Artificial neural networks</h2>
+		<p class="fragment">A family of machine learning algorithms</p>
+		<p class="fragment">Biologically inspired</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+
+		<h2>Artificial neural networks</h2>
+		<img src="img/minsky_papert.png">
+		<div class="cite">Minsky and Papert (1969)</div>
+	</section>
+
+	<section>
+		<h2> Artificial neural networks</h2>
+		<p>A family of machine learning algorithms</p>
+		<p>Biologically inspired</p>
+		<p class="fragment">Implement a cascade of linear/non-linear operations</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/simple-network.png">
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<h2> Artificial neural networks</h2>
+		<p>A family of machine learning algorithms</p>
+		<p>Biologically inspired</p>
+		<p>Implement a cascade of linear/non-linear operations</p>
+		<p class="fragment">Learn by back-propagating the errors through the network</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/simple-backprop.png">
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<h2> Convolutional networks</h2>
+		<p class="fragment">A way to reduce the number of parameters</p>
+		<p class="fragment">Capitalizes on spatial correlations in images</p>
+		<p class="fragment">Inspired by the mammalian visual system</p>
+
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+
+	</section>
+
+	<section>
+		<img src="img/bosking.jpg" height=500>
+
+		<div class="cite">
+			<a href="http://www.jneurosci.org/content/17/6/2112.long">Bosking et al. 1997</a>
+		</div>
+
+	</section>
+
+	<section>
+		<img src="img/convolution_animation.gif">
+
+		<div class="cite">
+			<a href="https://arxiv.org/abs/1603.07285">Dumoulin and Visin (2016)</a>
+		</div>
+	</section>
+	<!--
+	<section>
+		<div style="position: absolute; left:10px; top:10px;">
+			<img src="img/wall.png" height=250px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:370px; top 10px;">
+			<img src="img/horizontal_wall.png" height=220px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:650px;">
+			<img src="img/vertical_wall.png" height=220px;>
+		</div>
+	</section>
+	-->
+	<section>
+		<img src="img/neural-network.png">
+		<div class=cite>
+			<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/imagenet-fig4l.png">
+		<div class=cite>
+			<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
+		</div>
+	</section>
+
+	<section>
+		<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
+			High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
+			<div class="fragment" align="middle">
+				<image src="img/OCT.png" width="400px">
 			</div>
-			<div style="position: absolute; left:580px; top 10px;">
-				<img src="img/aaron.jpeg" height="200">
-				<br>
-				Aaron Lee
+			<div class="fragment" align="middle">
+				<image src="img/OCT-irf.png" width="400px">
 			</div>
-			<div style="position: absolute; left:375px; top 10px;">
-				<img src="img/parmita.jpeg" height="200">
-				<br>
-				Parmita Mehta
-			</div>
-		</section>
+	</section>
 
-		<section>
-			<h2>Artificial neural networks</h2>
-			<p class="fragment">A family of machine learning algorithms</p>
-			<p class="fragment">Biologically inspired</p>
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-		</section>
+	<section>
+		<h4>The UW OCT/EMR data-base</h4>
+		<div class="fragment" style="position: absolute; left: 10px; top: 55px;" >
+			<p class="fragment">
+				10 years (2006-2016)
+			<p class="fragment">
+				9,285 patients
+			<p class="fragment">
+				43,328 OCT volumes
+			<p class="fragment">
+				2.64 million OCT images
+			<p class="fragment">
+				2.5 TB of data
+		</div>
+		<div style="position: absolute; left: 400px; top: 55px;" >
+			<p class="fragment">Linked to EPIC electronic medical records
+			<p class="fragment"> For each OCT we know:
+				<small>
+			<p class="fragment"> Visual acuity
+			<p class="fragment"> OCT interpretation
+			<p class="fragment"> Diagnosis
+			<p class="fragment"> Treatment determinations
+			<p class="fragment"> In some cases - longitudinal measurements
+				</small>
+		</div>
+	</section>
 
-		<section>
+	<section>
+		<h4>Deep learning is effective for the classification of OCT images of normal versus Age-related Macular Degeneration </h4>
+		<img src="img/amd-vgg16-results.png" height=400px>
+		<div class=cite>
+			<a href="">Lee et al. (2016)</a>
+		</div>
+	</section>
 
-			<h2>Artificial neural networks</h2>
-			<img src="img/minsky_papert.png">
-			<div class="cite">Minsky and Papert (1969)</div>
-		</section>
-
-		<section>
-			<h2> Artificial neural networks</h2>
-			<p>A family of machine learning algorithms</p>
-			<p>Biologically inspired</p>
-			<p class="fragment">Implement a cascade of linear/non-linear operations</p>
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-		</section>
-
-		<section>
-			<img src="img/simple-network.png">
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-		</section>
-
-		<section>
-			<h2> Artificial neural networks</h2>
-			<p>A family of machine learning algorithms</p>
-			<p>Biologically inspired</p>
-			<p>Implement a cascade of linear/non-linear operations</p>
-			<p class="fragment">Learn by back-propagating the errors through the network</p>
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-		</section>
-
-		<section>
-			<img src="img/simple-backprop.png">
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-		</section>
-
-		<section>
-			<h2> Convolutional networks</h2>
-			<p class="fragment">A way to reduce the number of parameters</p>
-			<p class="fragment">Capitalizes on spatial correlations in images</p>
-			<p class="fragment">Inspired by the mammalian visual system</p>
-
-			<div class="cite">
-				<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
-			</div>
-
-		</section>
-
-		<section>
-			<img src="img/bosking.jpg" height=500>
-
-			<div class="cite">
-				<a href="http://www.jneurosci.org/content/17/6/2112.long">Bosking et al. 1997</a>
-			</div>
-
-		</section>
-
-		<section>
-			<img src="img/convolution_animation.gif">
-
-			<div class="cite">
-				<a href="https://arxiv.org/abs/1603.07285">Dumoulin and Visin (2016)</a>
-			</div>
-		</section>
-		<!--
-		<section>
-			<div style="position: absolute; left:10px; top:10px;">
-				<img src="img/wall.png" height=250px;>
-			</div>
-			<div class="fragment" style="position: absolute; left:370px; top 10px;">
-				<img src="img/horizontal_wall.png" height=220px;>
-			</div>
-			<div class="fragment" style="position: absolute; left:650px;">
-				<img src="img/vertical_wall.png" height=220px;>
-			</div>
-		</section>
-		-->
-		<section>
-			<img src="img/neural-network.png">
+<!--
+	<section>
+		<h4><div align="center">Is there a ball in the picture?</div></h4>
+		<image src="img/dog-with-ball.png" height="400px">
 			<div class=cite>
-				<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
 			</div>
-		</section>
+	</section>
 
-		<section>
-			<img src="img/imagenet-fig4l.png">
+	<section>
+		<h4><div align="center">How about now?</div></h4>
+		<image src="img/dog-with-ball-occluder-corner.png" height="400px">
 			<div class=cite>
-				<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
 			</div>
-		</section>
+	</section>
 
-		<section>
-			<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
-				High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
-				<div class="fragment" align="middle">
-					<image src="img/OCT.png" width="400px">
-				</div>
-				<div class="fragment" align="middle">
-					<image src="img/OCT-irf.png" width="400px">
-				</div>
-		</section>
+	<section>
+		<h4><div align="center">And now?</div></h4>
+		<image src="img/dog-with-ball-occluder-center.png" height="400px">
 
-		<section>
-			<h4>The UW OCT/EMR data-base</h4>
-			<div class="fragment" style="position: absolute; left: 10px; top: 55px;" >
-				<p class="fragment">
-					10 years (2006-2016)
-				<p class="fragment">
-					9,285 patients
-				<p class="fragment">
-					43,328 OCT volumes
-				<p class="fragment">
-					2.64 million OCT images
-				<p class="fragment">
-					2.5 TB of data
+			<div class=cite>
+				<a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
 			</div>
-			<div style="position: absolute; left: 400px; top: 55px;" >
-				<p class="fragment">Linked to EPIC electronic medical records
-				<p class="fragment"> For each OCT we know:
-					<small>
-				<p class="fragment"> Visual acuity
-				<p class="fragment"> OCT interpretation
-				<p class="fragment"> Diagnosis
-				<p class="fragment"> Treatment determinations
-				<p class="fragment"> In some cases - longitudinal measurements
-					</small>
-			</div>
-		</section>
+	</section>
 
-		<section>
-			<h4>Deep learning is effective for the classification of OCT images of normal versus Age-related Macular Degeneration </h4>
-			<img src="img/amd-vgg16-results.png" height=400px>
+	<section>
+		<h4><div align="center">Deep learning network identifies clinical features</div></h4>
+		<image src="./img/amd-vgg16-occlusion.png" height="500px">
 			<div class=cite>
 				<a href="">Lee et al. (2016)</a>
 			</div>
-		</section>
+	</section>
+-->
 
-
-		<section>
-			<h4><div align="center">Is there a ball in the picture?</div></h4>
-			<image src="img/dog-with-ball.png" height="400px">
-				<div class=cite>
-					><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">How about now?</div></h4>
-			<image src="img/dog-with-ball-occluder-corner.png" height="400px">
-				<div class=cite>
-					><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">And now?</div></h4>
-			<image src="img/dog-with-ball-occluder-center.png" height="400px">
-
-				<div class=cite>
-					<a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">Deep learning network identifies clinical features</div></h4>
-			<image src="./img/amd-vgg16-occlusion.png" height="500px">
-				<div class=cite>
-					<a href="">Lee et al. (2016)</a>
-				</div>
-		</section>
-
-
-		<section>
-			<h4>Solving multi-class multi-label problems</h4>
-			<p class="fragment">Binary classification doesn't model clinical decision making </p>
-			<p class="fragment">Patients can have any of a several diseases</p>
-			<p class="fragment">Patients can have more than one disease</p>
-			<div class=cite>
-				<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
-			</div>
-
-		</section>
-
-		<section>
-			<h4>Augmenting the neural network with additional patient information</h4>
-			<img src="img/multi_class_multi_label.png">
-			<div class=cite>
-				<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
-			</div>
-		</section>
-
-
-		<section>
-			<h2>Fully convolutional networks</h2>
-			Take an image as input and produce an image as output
-		</section>
-
-		<section>
-			<img src="img/unet-architecture.png" height=500px>
-			<div class=cite>
-				<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
-			</div>
-		</section>
-
-		<section>
-			<h4><div align="center">Intraretinal fluid segmentation</div></h4>
-			<image src="./img/unet-segmentation-1.png" height="500px">
-				<div style="position: absolute; left: 700px; top: 620px" >
-					<small><a href="">Lee et al. (2016)</a>
-					</small>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">Intraretinal fluid segmentation</div></h4>
-			<image src="./img/unet-segmentation-2.png" height="500px">
-				<div style="position: absolute; left: 700px; top: 620px" >
-					<small><a href="">Lee et al. (2016)</a>
-					</small>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">Intraretinal fluid segmentation</div></h4>
-			<image src="./img/unet-vs-humans.png" height="500px">
-				<div style="position:absolute; left:580px;top:70px">
-					<image src="./img/white-square.png" height="500px">
-				</div>
-				<div style="position: absolute; left: 700px; top: 620px" >
-					<small><a href="">Lee et al. (2016)</a>
-					</small>
-				</div>
-		</section>
-
-		<section>
-			<h4><div align="center">Intraretinal fluid segmentation</div></h4>
-			<image src="./img/unet-vs-humans.png" height="500px">
-				<div style="position: absolute; left: 700px; top: 620px" >
-					<small><a href="">Lee et al. (2016)</a>
-					</small>
-				</div>
-		</section>
-
-
-		<section>
-			<h4>U-net based image synthesis</h4>
-			<img src="img/UNET.png">
-		</section>
-
-		<section>
-			<h4>OCT => OCTA </h4>
-			<img src="img/oct2octa.png" height=500px>
-			<div class=cite>
-				<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
-			</div>
-		</section>
-		<section>
-			<h4>OCT => OCTA </h4>
-			<img src="img/oct2octa_cues.png">
-			<div class=cite>
-				<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
-			</div>
-		</section>
-
-		<section>
-			<h4>MRI => MRI </h4>
-			<video width="800" autoplay loop>
-				<source src="img/t2t1.mov">
-			</video>
-		</section>
-
-		<section>
-			<h4>MRI => MRI </h4>
-			<img src="./img/t2t1_rsquared.png">
-		</section>
-
-		<section>
-			<h4>MRI => MRI </h4>
-			<img src="./img/t2t1_synth_rsquared.png">
-		</section>
-
-		<section>
-			<h3>What is this good for?</h3>
-			<h3 class="fragment">Application: cross-modal image registration</h3>
-			<h3 class="fragment">An example with diffusion MRI</h3>
-		</section>
-
-		<section>
-			<img src="./img/dti_reg.png" height=400>
-		</section>
-
-		<section>
-			<img src='img/compare_registrations.png'>
-		</section>
-
-		<section>
-			<h2>Summary and conclusions</h2>
-			<p class="fragment">Fully convolutional neural networks are used for cross-modal image synthesis</p>
-			<p class="fragment">There are already applications (e.g., cross-modal registration)</p>
-			<p class="fragment">But more questions that answers: </p>
-			<p class="fragment">What is it learning?</p>
-			<p class="fragment">Can it tell us anything new about the physics of contrast mechanisms?</p>
-
-		</section>
-
-	<section id="afq-insight">
-		<h2>Opportunity: learning structure</h2>
-		<div style="position: absolute; left:40px; top 10px;">
-		<img src="img/adam.jpeg" height="300">
-			<br>
-			Adam Richie-Halford
-		</div >
-		<div style="position: absolute; left:350px; top 10px;">
-		<img src="img/noah.jpg", height="300">
-			<br>
-			Noah Simon
-		</div>
-		<div style="position: absolute; left:600px; top 10px;">
-		<img src="img/jason.jpg" height="300">
-		<br>
-		Jason Yeatman
+	<section>
+		<h4>Solving multi-class multi-label problems</h4>
+		<p class="fragment">Binary classification doesn't model clinical decision making </p>
+		<p class="fragment">Patients can have any of a several diseases</p>
+		<p class="fragment">Patients can have more than one disease</p>
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
 		</div>
 
 	</section>
 
+	<section>
+		<h4>Augmenting the neural network with additional patient information</h4>
+		<img src="img/multi_class_multi_label.png">
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
+		</div>
+	</section>
 
-		<section>
-			<h4>Normal behavior is supported by brain connectivity</h4>
-			<img src="./img/OldenDays.png" height="505">
-			<div class="cite">
-				Image from <br><a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
+
+	<section>
+		<h2>Fully convolutional networks</h2>
+
+		Take an image as input and produce an image as output
+
+	</section>
+
+<!--
+	<section>
+		<img src="img/unet-architecture.png" height=500px>
+		<div class=cite>
+			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
+		</div>
+	</section>
+
+-->
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-1.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
 			</div>
-		</section>
+	</section>
 
-		<section>
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-2.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position:absolute; left:580px;top:70px">
+				<image src="./img/white-square.png" height="500px">
+			</div>
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+
+	<section>
+		<h4>U-net based image synthesis</h4>
+		<img src="img/UNET.png">
+	</section>
+
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa.png" height=500px>
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>
+	</section>
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa_cues.png">
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		<video width="800" autoplay loop>
+			<source src="img/t2t1.mov">
+		</video>
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		<img src="./img/t2t1_rsquared.png">
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		<img src="./img/t2t1_synth_rsquared.png">
+	</section>
+
+	<section>
+		<h3>What is this good for?</h3>
+		<h3 class="fragment">Application: cross-modal image registration</h3>
+		<h3 class="fragment">An example with diffusion MRI</h3>
+	</section>
+
+	<section>
+		<img src="./img/dti_reg.png" height=400>
+	</section>
+
+	<section>
+		<img src='img/compare_registrations.png'>
+	</section>
+
+	<section>
+		<h2>Summary and conclusions</h2>
+		<p class="fragment">Convolutional neural networks can be used for cross-modal image synthesis</p>
+		<p class="fragment">Useful for image registration</p>
+		<p class="fragment">But more questions that conclusions: </p>
+		<p class="fragment">What is it learning?</p>
+		<p class="fragment">Can it tell us anything new about the physics of contrast mechanisms?</p>
+
+	</section>
+
+	<section>
+		<h2>Transition slide</h2>
+		Build your own brain observatory!
+
+	</section>
+
+	<section>
+		<h2>Build your own brain observatory!</h2>
+		<p class="fragment">A lot of data has already been collected</p>
+		<p class="fragment">But sharing data is:</p>
+		<p class="fragment">Not incentivized</p>
+		<p class="fragment">Not easy enough</p>
+	</section>
+
+	<section>
+		<h4>Normal behavior is supported by brain connectivity</h4>
+		<img src="./img/OldenDays.png" height="505">
+		<div class="cite">
+			Image from <br><a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="./img/optic-radiation-postmortem.png" height="505" >
+	</section>
+
+	<section>
+		<h3>Not just passive cables</h3>
+		<p class="fragment">Brain connections develop and mature with age</p>
+		<p class="fragment">Individual differences account for differences in behaviour</p>
+		<p class="fragment">Adapt and  with learning</p>
+	</section>
+
+	<section>
+		<div style="position: absolute; left: 100px;">
 			<img src="./img/optic-radiation-postmortem.png" height="505" >
-		</section>
+		</div>
 
-		<section>
-			<h3>Not just passive cables</h3>
-			<p class="fragment">Brain connections develop and mature with age</p>
-			<p class="fragment">Individual differences account for differences in behaviour</p>
-			<p class="fragment">Adapt and  with learning</p>
-		</section>
+		<div class="fragment" style="position: absolute; left: 500px;">
 
-		<section>
-			<div style="position: absolute; left: 100px;">
-				<img src="./img/optic-radiation-postmortem.png" height="505" >
+			<img src="./img/nerve-fiber.png" height="505" >
+		</div>
+
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 390, 450, 590, 450);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 350, 250, 150);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align: left>
+			Isotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-isotropic.mp4">
+		</video>
+
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
+		</div>
+
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 325, 250, 175);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 370, 400, 610, 400);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align:left;>
+			Anisotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-anisotropic.mp4">
+		</video>
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
+		</div>
+	</section>
+
+	<section>
+
+		<div class = "fragment fade-out" style="position: absolute; left: 100px;">
+			<img src="./img/optic-radiation-postmortem.png" height="505" >
+		</div>
+
+		<div style="position: absolute; left: 500px;">
+			<img src="./img/nerve-fiber.png" height="505" >
+		</div>
+
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="fiber-arrow-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('fiber-arrow-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 630, 600, 800, 600);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="fiber-arrow-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('fiber-arrow-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 450, 100, 450, 400);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<video width="600" autoplay loop>
+			<source src="./img/dMRI-signal-movie.mp4">
+		</video>
+	</section>
+
+
+	<section>
+		<h4>Diffusion statistics</h4>
+		<div class="fragment" style="position: absolute; left: 14px;">
+			<img src="img/tensor-stats1.png" height="400"  >
+			<div style="position: absolute; left: 75px; top: 420px;">
+				<small>Mean diffusivity</small>
+			</div>
+			<div style="position: absolute; left: -8px;">
+				<img src="img/md-scale.png" height="40" >
+			</div>
+			<div style="position: absolute; left: 222px; top:432px; ">
+				<img src="img/md-units.png" height="50" >
+			</div>
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 7px;">
+			<img src="img/tensor-stats2.png" height="400"  >
+
+			<div style="position: absolute; left: 350px; top:432px; ">
+				<video width="200" autoplay loop>
+					<source src="./img/diffusion-fa-251.mov">
 			</div>
 
-			<div class="fragment" style="position: absolute; left: 500px;">
-
-				<img src="./img/nerve-fiber.png" height="505" >
+			<div style="position: absolute; left: 350px; top: 420px;">
+				<small>Fractional anisotropy</small>
 			</div>
 
-		</section>
-
-		<section>
-			<h4>Diffusion MRI</h4>
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="arrows-iso-horiz" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('arrows-iso-horiz').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 390, 450, 590, 450);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 0px;">
+			<img src="img/tensor-stats3.png" height="400"  >
+			<div style="position: absolute; left: 600px; top: 420px;">
+				<small>Principal diffusion direction</small>
 			</div>
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="arrows-iso-vert" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('arrows-iso-vert').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 250, 350, 250, 150);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
+			<div style="position: absolute; left: 700px; top:432px; ">
+				<img src="img/axes.png" height="100" >
 			</div>
-
-			<div class="fragment" text-align: left>
-				Isotropic diffusion
-			</div>
-			<video width="600" autoplay loop>
-				<source src="./img/diffusion-isotropic.mp4">
-			</video>
-
-			<div style="position: absolute; left: 600px; top: 600px" >
-				<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
-			</div>
-
-		</section>
-
-		<section>
-			<h4>Diffusion MRI</h4>
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="arrows-aniso-vert" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('arrows-aniso-vert').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 250, 325, 250, 175);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
-			</div>
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="arrows-aniso-horiz" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('arrows-aniso-horiz').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 370, 400, 610, 400);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
-			</div>
-
-			<div class="fragment" text-align:left;>
-				Anisotropic diffusion
-			</div>
-			<video width="600" autoplay loop>
-				<source src="./img/diffusion-anisotropic.mp4">
-			</video>
-			<div style="position: absolute; left: 600px; top: 600px" >
-				<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017)</a></small>
-			</div>
-		</section>
-
-		<section>
-
-			<div class = "fragment fade-out" style="position: absolute; left: 100px;">
-				<img src="./img/optic-radiation-postmortem.png" height="505" >
-			</div>
-
-			<div style="position: absolute; left: 500px;">
-				<img src="./img/nerve-fiber.png" height="505" >
-			</div>
-
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="fiber-arrow-horiz" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('fiber-arrow-horiz').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 630, 600, 800, 600);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
-			</div>
-
-			<div class = "fragment fade-in" style="position: absolute">
-				<canvas id="fiber-arrow-vert" width="1000" height="1000">
-				</canvas>
-				<script>
-                    context = document.getElementById('fiber-arrow-vert').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 450, 100, 450, 400);
-                    context.lineWidth = 2;
-                    context.stroke();
-				</script>
-			</div>
-
-		</section>
-
-		<section>
-			<h4>Diffusion MRI</h4>
-			<video width="600" autoplay loop>
-				<source src="./img/dMRI-signal-movie.mp4">
-			</video>
-		</section>
-
-
+		</div>
+	</section>
 
 	<section>
 		<h2>Automated Fiber Quantification (AFQ)</h2>
@@ -671,14 +698,77 @@
 	<section>
 		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
 		<p class="fragment">Disease of upper and lower motor neurons</p>
-		<p class="fragment">=>Focus on corticospinal tract</p>
-		<img class="fragment" src="img/sarica_results.png">
+
+		<img class="fragment" src="img/cst_bilateral.png" height="300px">
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
+
+		<img src="img/sarica_results.png">
 		<p class="fragment">Classify patients based on the tissue properties in this part of the brain</p>
-		<p class="fragment">=> 80% accuracy</p>
+		<p class="fragment">Random Forest algorithm => 80% accuracy</p>
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
 		</div>
 
+	</section>
+
+	<section>
+		<h2>How could we improve on this?</h2>
+		<em class="fragment"><h2>If we can't get the data</h2></em>
+
+	</section>
+
+	<section id="afq-browser">
+		<h2>Challenge: improve data sharing in dMRI</h2>
+		<div style="position: absolute; left:70px; top 10px;">
+			<img src="img/jason.jpg" height="200">
+			<br>
+			Jason Yeatman
+		</div>
+		<div style="position: absolute; left:280px; top 10px;">
+			<img src="img/adam.jpeg" height="200">
+			<br>
+			Adam <br>Richie-Halford
+		</div >
+		<div style="position: absolute; left:490px; top 10px;">
+			<img src="img/josh.png", height="200">
+			<br>
+			Josh Smith
+		</div>
+		<div style="position: absolute; left:705px; top 10px;">
+			<img src="img/anisha.jpg", height="200">
+			<br>
+			Anisha <br> Keshavan
+		</div>
+	</section>
+
+	<section>
+
+
+	</section>
+
+	<section id="afq-insight">
+	<h2>Opportunity: learning structure</h2>
+	<div style="position: absolute; left:40px; top 10px;">
+	<img src="img/adam.jpeg" height="300">
+		<br>
+		Adam Richie-Halford
+	</div >
+	<div style="position: absolute; left:350px; top 10px;">
+	<img src="img/noah.jpg", height="300">
+		<br>
+		Noah Simon
+	</div>
+	<div style="position: absolute; left:600px; top 10px;">
+	<img src="img/jason.jpg" height="300">
+	<br>
+	Jason Yeatman
+	</div>
 	</section>
 
 
@@ -710,7 +800,7 @@
 	<img src="img/group_lasso_penalty.png" width="600px">
 	<p class="fragment">But the group lasso does not enforce overall sparsity</p>
 	<div class="cite">
-		<a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin</a>
+		<a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
 	</div>
 	</section>
 	<section>
