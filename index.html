@@ -103,17 +103,17 @@
 
 	<section>
 		<h2>Opportunity: learning from large-scale datasets</h2>
-		<div style="position: absolute; left:170px; top 10px;">
+		<div style="position: absolute; left:170px; top:60px;">
 			<img src="img/sa.jpeg" height="200">
 			<br>
 			Sa Xiao
 		</div>
-		<div style="position: absolute; left:580px; top 10px;">
+		<div style="position: absolute; left:580px; top:60px;">
 			<img src="img/aaron.jpeg" height="200">
 			<br>
 			Aaron Lee
 		</div>
-		<div style="position: absolute; left:375px; top 10px;">
+		<div style="position: absolute; left:375px; top:60px;">
 			<img src="img/parmita.jpeg" height="200">
 			<br>
 			Parmita Mehta
@@ -204,7 +204,7 @@
 		<div style="position: absolute; left:10px; top:10px;">
 			<img src="img/wall.png" height=250px;>
 		</div>
-		<div class="fragment" style="position: absolute; left:370px; top 10px;">
+		<div class="fragment" style="position: absolute; left:370px; top:10px;">
 			<img src="img/horizontal_wall.png" height=220px;>
 		</div>
 		<div class="fragment" style="position: absolute; left:650px;">
@@ -423,6 +423,14 @@
 	</section>
 
 	<section>
+		<h4>MRI => MRI </h4>
+
+		<img src="img/t2t1_model_comparison.png">
+
+	</section>
+
+
+	<section>
 		<h3>What is this good for?</h3>
 		<h3 class="fragment">Application: cross-modal image registration</h3>
 		<h3 class="fragment">An example with diffusion MRI</h3>
@@ -447,9 +455,10 @@
 	</section>
 
 	<section>
-		<h2>Transition slide</h2>
-		Build your own brain observatory!
-
+		<h2>Future applications</h2>
+		<p class="fragment"> Cross-modal registration in other data</p>
+		<p class="fragment"> Transcriptomic imaging </p>
+		<p class="fragment"> Digital histology</p>
 	</section>
 
 	<section>
@@ -726,22 +735,22 @@
 
 	<section id="afq-browser">
 		<h2>Challenge: improve data sharing</h2>
-		<div style="position: absolute; left:70px; top 10px;">
+		<div style="position: absolute; left:70px; top:60px;">
 			<img src="img/jason.jpg" height="200">
 			<br>
 			Jason Yeatman
 		</div>
-		<div style="position: absolute; left:280px; top 10px;">
+		<div style="position: absolute; left:280px; top:60px;">
 			<img src="img/adam.jpeg" height="200">
 			<br>
 			Adam <br>Richie-Halford
 		</div >
-		<div style="position: absolute; left:490px; top 10px;">
+		<div style="position: absolute; left:490px; top:60px;">
 			<img src="img/josh.png", height="200">
 			<br>
 			Josh Smith
 		</div>
-		<div style="position: absolute; left:705px; top 10px;">
+		<div style="position: absolute; left:705px; top:60px;">
 			<img src="img/anisha.jpg", height="200">
 			<br>
 			Anisha <br> Keshavan
@@ -751,14 +760,60 @@
 	<section>
 		<h2>The solution</h2>
 		<p class="fragment">A web-based application</p>
-		<p class="fragment">Enables exploratory data analysis</p>
-		<p class="fragment">Used linked visualizations</p>
-
+		<p class="fragment">Builds a web-site for an AFQ dataset</p>
+		<p class="fragment">Automatically uploads the website to Github</p>
 	</section>
 
 
 	<section>
 		<h2>For example</h2>
+
+		<video width="800" autoplay loop>
+			<source src="./img/afq-browser-demo.mp4">
+		</video>
+
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
+
+	</section>
+	<section>
+		<h2> Exploratory data analysis</h2>
+
+		<p class="fragment"> published results<p>
+
+		<p class="fragment"></p>
+
+		<p class="fragment">Linked visualizations</p>
+
+	</section>
+
+	<section>
+		<h2>Automatic data sharing</h2>
+
+		<img src="./img/afq-browser-static.png" width="800px">
+
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
+
+		<svg class="fragment" width="400" height="110"  style="position: absolute; left:435px; top:500px;">
+			<rect rx="10" ry="10" width="150" height="60" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.2;" />
+		</svg>
+
+		<svg class="fragment" width="400" height="110"  style="position: absolute; left:780px; top:150px;">
+			<rect rx="10" ry="10" width="100" height="60" style="fill:yellow;stroke-width:3;stroke:rgb(1,0,0);opacity:0.2;" />
+		</svg>
+
+	</section>
+
+
+	<section>
+		<h2>Further exploration</h2>
+
+		<video width="800" autoplay loop>
+			<source src="./img/afq-browser-binder-demo.mp4">
+		</video>
 
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
@@ -769,17 +824,17 @@
 
 	<section id="afq-insight">
 	<h2>Challenge: data-driven discovery in dMRI</h2>
-	<div style="position: absolute; left:40px; top 10px;">
+	<div style="position: absolute; left:40px; top:80px;">
 	<img src="img/adam.jpeg" height="300">
 		<br>
 		Adam Richie-Halford
 	</div >
-	<div style="position: absolute; left:350px; top 10px;">
+	<div style="position: absolute; left:350px; top:80px;">
 	<img src="img/noah.jpg", height="300">
 		<br>
 		Noah Simon
 	</div>
-	<div style="position: absolute; left:600px; top 10px;">
+	<div style="position: absolute; left:600px; top:80px;">
 	<img src="img/jason.jpg" height="300">
 	<br>
 	Jason Yeatman
@@ -835,8 +890,13 @@
 	</section>
 
 	<section>
+		<h2> In Sarica et al.'s data</h2>
 		<img src="img/sgl_result.png">
 		<p class="fragment">=> Classification accuracy of ~84%, AUC of 0.9 </p>
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
+
 	</section>
 
 	<section>
@@ -849,13 +909,13 @@
 
 	<section>
 		<h2>Scaling expertise with citizen science</h2>
-		<div style="position: absolute; left:200px; top 10px;">
+		<div style="position: absolute; left:200px; top:60px;">
 		<img src="img/anisha.jpg" height="300">
 			<br>
 			Anisha Keshavan
 		</div>
 
-		<div style="position: absolute; left:420px; top 10px;">
+		<div style="position: absolute; left:420px; top:60px;">
 			<img src="img/jason.jpg" height="300">
 			<br>
 			Jason Yeatman
@@ -892,7 +952,7 @@
 
 	<section>
 		<h2>Braindr</h2>
-		<div style="position: absolute; left:200px; top 10px;">
+		<div style="position: absolute; left:200px; top:10px;">
 		<blockquote class="twitter-tweet" data-lang="en">
 			<p lang="en" dir="ltr">Are you at work but feel like playing Tinder? Why not play braindr (<a href="https://t.co/yXw191Q7Hy">https://t.co/yXw191Q7Hy</a>) instead, and help neuroscientists rate the quality of brain images? Swipe left to fail bad quality images! Built with <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a> and <a href="https://twitter.com/Firebase?ref_src=twsrc%5Etfw">@Firebase</a> <a href="https://twitter.com/hashtag/citizenscience?src=hash&amp;ref_src=twsrc%5Etfw">#citizenscience</a> <a href="https://t.co/tpI9Y3UKOb">pic.twitter.com/tpI9Y3UKOb</a></p>&mdash; anisha (@akeshavan_)
 			<a href="https://twitter.com/akeshavan_/status/961385285182353408?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
@@ -967,6 +1027,8 @@
 	<section>
 		<h2>Challenge:large scale computing</h2>
 		<p class="fragment">Solution: the cloud</p>
+		<p class="fragment">Infinitely scalable</p>
+		<p class="fragment">"Elastic"</p>
 		<p class="fragment">But the cloud is hard to operate</p>
 
 	</section>
@@ -974,7 +1036,7 @@
 	<section>
 		<h2>Challenge: accessible cloud computing</h2>
 
-		<div style="position: absolute; left:40px; top 10px;">
+		<div style="position: absolute; left:350px; top:60px;">
 			<img src="img/adam.jpeg" height="300">
 			<br>
 			Adam Richie-Halford
@@ -983,15 +1045,24 @@
 	</section>
 
 	<section>
-	Cloudknot: package your code and run it on AWS Batch
+		<h2>Cloudknot: package your code and run it on AWS Batch</h2>
 
+		<img src="img/cloudknot_workflow.png" height="500">
 	<div class="cite">
 			<a href="">Richie-Halford and Rokem (submitted)</a>
 
 	</div>
 	</section>
 
+		<section>
+			<h2>Cloudknot: package your code and run it on AWS Batch</h2>
 
+			<img src="img/mri_benchmark.png" height="400">
+
+			<div class="cite">
+				<a href="http://www.vldb.org/pvldb/vol10/p1226-mehta.pdf">Mehta et al. (2017)</a>
+			</div>
+		</section>
 	<section>
 	<h2>Sociotechnical challenges</h2>
 	Open source software
@@ -1010,11 +1081,11 @@
 		<p class="fragment">=> Hack weeks</p>
 		<!--
 
-		<div style="position: absolute; left:120px; top 10px;">
+		<div style="position: absolute; left:120px; top:10px;">
 		<img src="img/tal.jpg" height="300px">
 		</div>
 
-		<div style="position: absolute; left:450px; top 10px;">
+		<div style="position: absolute; left:450px; top:10px;">
 			<img src="img/daniela.png" height="300px">
 		</div>
 
@@ -1039,7 +1110,7 @@
 
 		<h2>Thanks!</h2>
 
-		<div style="position: absolute; left:100px; top 10px;" align="left">
+		<div style="position: absolute; left:100px; top:100px;" align="left">
 			Sa Xiao
 			<br>
 			Parmita Mehta
@@ -1057,7 +1128,7 @@
 			Noah Simon
 		</div>
 
-		<div style="position: absolute; left:500px; top 10px;">
+		<div style="position: absolute; left:500px; top:80px;">
 			<img src="img/msdse-sponsors.png" height="100px">
 			<br>
 			<img src="img/nimh-logo.gif" height="100px">
