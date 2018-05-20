@@ -152,6 +152,7 @@
 			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
 		</div>
 	</section>
+	<!--
 
 	<section>
 		<h2> Artificial neural networks</h2>
@@ -170,6 +171,7 @@
 			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
 		</div>
 	</section>
+	-->
 
 	<section>
 		<h2> Convolutional networks</h2>
@@ -226,6 +228,7 @@
 		</div>
 	</section>
 
+	<!--
 	<section>
 		<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
 			High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
@@ -272,7 +275,6 @@
 		</div>
 	</section>
 
-<!--
 	<section>
 		<h4><div align="center">Is there a ball in the picture?</div></h4>
 		<image src="img/dog-with-ball.png" height="400px">
@@ -305,7 +307,7 @@
 				<a href="">Lee et al. (2016)</a>
 			</div>
 	</section>
--->
+
 
 	<section>
 		<h4>Solving multi-class multi-label problems</h4>
@@ -326,14 +328,13 @@
 			<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
 		</div>
 	</section>
-
+	-->
 
 	<section>
 		<h2>Fully convolutional networks</h2>
 
 		Take an image as input and produce an image as output
 
-	</section>
 
 <!--
 	<section>
@@ -343,7 +344,7 @@
 		</div>
 	</section>
 
--->
+
 
 	<section>
 		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
@@ -383,13 +384,17 @@
 				</small>
 			</div>
 	</section>
+	-->
 
-
-	<section>
-		<h4>U-net based image synthesis</h4>
 		<img src="img/UNET.png">
+
+		<div class=cite>
+			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
+		</div>
+
 	</section>
 
+	<!--
 	<section>
 		<h4>OCT => OCTA </h4>
 		<img src="img/oct2octa.png" height=500px>
@@ -404,7 +409,14 @@
 			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
 		</div>
 	</section>
-
+	-->
+		<section>
+			<h2>The IXI dataset</h2>
+			<p>~700 subjects</p>
+			<p> Several different MRI modailities</p>
+			<p> Preprocessed and co-registered </p>
+				<a href="http://brain-development.org/ixi-dataset/">http://brain-development.org/ixi-dataset/</a>
+		</section>
 	<section>
 		<h4>MRI => MRI </h4>
 		<video width="800" autoplay loop>
@@ -428,12 +440,16 @@
 		<img src="img/t2t1_model_comparison.png">
 
 	</section>
+	<section>
+		<h3>How well does this generalize?</h3>
+	</section>
 
-
+	<section>
+		<img src="img/t2t1_model_comparison_with_generalization.png">
+	</section>
 	<section>
 		<h3>What is this good for?</h3>
 		<h3 class="fragment">Application: cross-modal image registration</h3>
-		<h3 class="fragment">An example with diffusion MRI</h3>
 	</section>
 
 	<section>
@@ -445,7 +461,6 @@
 	</section>
 
 	<section>
-		<h2>Summary and conclusions</h2>
 		<p class="fragment">Convolutional neural networks can be used for cross-modal image synthesis</p>
 		<p class="fragment">Useful for image registration</p>
 		<p class="fragment">But more questions that conclusions: </p>
@@ -856,6 +871,7 @@
 	<section>
 		<h2>The Lasso</h2>
 		<img src="img/lasso_penalty.png" width="400px">
+		<p class="fragment">Enforces sparsity</p>
 		<p class="fragment">But the standard lasso ignores the known structure in the data</p>
 		<p class="fragment">Accuracy: ~71% (AUC: ~71%, precision: ~68%)</p>
 		<p class="fragment">Does not discover the right features</p>
@@ -868,7 +884,11 @@
 	<section>
 		<h2>The Group Lasso</h2>
 	<img src="img/group_lasso_penalty.png" width="600px">
-	<p class="fragment">But the group lasso does not enforce overall sparsity</p>
+	<p class="fragment">Where <em>l</em> are groups of variables </p>
+	<p class="fragment"><em>p(l)</em> is the number of variables in group <em>l</em></p>
+	<p class="fragment">In our case: all the measurements of a tissue propetry within a tract</p>
+	<p class="fragment">Enforces groups selection</p>
+	<p class="fragment">But does not enforce L1 sparsity within included groups</p>
 	<div class="cite">
 		<a href="http://www.columbia.edu/~my2550/papers/glasso.final.pdf">Yuan and Lin (2006)</a>
 	</div>
@@ -876,6 +896,10 @@
 	<section>
 		<h2>Sparse Group Lasso</h2>
 		<img src="img/sparse_group_lasso_penalty.png" width="600px">
+		<p class="fragment">Enforces sparsity both at the group level and the within-group level</p>
+		<p class="fragment">Subsumes the Group Lasso (&lambda;<sub>1</sub> = 0)</p>
+		<p class="fragment">And standard Lasso (&lambda;<sub>2</sub> = 0)</p>
+		<p class="fragment">But more meta-parameters</p>
 		<div class="cite">
 			<a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
 		</div>
@@ -883,9 +907,22 @@
 
 	<section>
 		<h2>Fitting meta-parameters</h2>
-		<p class="fragment">Nested cross-validation</p>
+		<p >Nested cross-validation</p>
+		<img src="img/NestedCrossValidation1.png" height="500px">
 
-		XXX
+
+	</section>
+	<section>
+		<h2>Fitting meta-parameters</h2>
+		<p >Nested cross-validation</p>
+		<img src="img/NestedCrossValidation2.png" height="500px">
+
+
+	</section>
+	<section>
+		<h2>Fitting meta-parameters</h2>
+		<p >Nested cross-validation</p>
+		<img src="img/NestedCrossValidation3.png" height="500px">
 
 	</section>
 
@@ -1023,6 +1060,7 @@
 		</div>
 	</section>
 
+	<!--
 
 	<section>
 		<h2>Challenge:large scale computing</h2>
@@ -1063,7 +1101,11 @@
 				<a href="http://www.vldb.org/pvldb/vol10/p1226-mehta.pdf">Mehta et al. (2017)</a>
 			</div>
 		</section>
+
+	-->
+
 	<section>
+
 	<h2>Sociotechnical challenges</h2>
 	Open source software
 	Training
@@ -1126,6 +1168,8 @@
 			Anisha Keshavan
 			<br>
 			Noah Simon
+			<br>
+			<img src="img/eScience.png" width="300px">
 		</div>
 
 		<div style="position: absolute; left:500px; top:80px;">
