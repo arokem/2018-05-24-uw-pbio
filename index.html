@@ -50,9 +50,9 @@
 		<h2> The era of brain observatories </h2>
 		<h3><div align=middle> Challenges and opportunities for computational neuroscience </div></h3>
 		</em>
-		<h4>May 24th, 2018</h4>
-		<h4>University of Washington</h4>
-		<h4>Department of Physiology and Biophysics</h4>
+		<br>May 24th, 2018
+		<br>University of Washington
+		<br>Department of Physiology and Biophysics
 		<br>
 		<p><a href="http://arokem.org">Ariel Rokem</a>,
 		<a href="http://escience.washington.edu">University of Washington eScience Institute</a> </p>
@@ -95,29 +95,53 @@
 
 	<section>
 		<h2>Challenges</h2>
-		<p class="fragment">Methods that work in standard use may fail in large datasets</p>
-		<p class="fragment">Existing sociotechnical structures are strained <br> (training, publication, collaboration)</p>
 		<p class="fragment">Interpretation challenges</p>
+		<p class="fragment">Existing sociotechnical structures are strained <br> (publication, collaboration, training)</p>
+		<p class="fragment">Methods that work in standard use may fail in large datasets</p>
 		<p class="fragment">Large-scale analysis requires large-scale computation</p>
 	</section>
 
 	<section>
-		<h2>Opportunity: learning from large-scale datasets</h2>
-		<div style="position: absolute; left:170px; top:60px;">
+		<h3>Opportunity: learning from large-scale datasets</h3>
+		<div style="position: absolute; left:260px; top:60px;">
 			<img src="img/sa.jpeg" height="200">
 			<br>
 			Sa Xiao
 		</div>
-		<div style="position: absolute; left:580px; top:60px;">
+		<div style="position: absolute; left:500px; top:60px;">
 			<img src="img/aaron.jpeg" height="200">
 			<br>
 			Aaron Lee
 		</div>
+
+		<!--
 		<div style="position: absolute; left:375px; top:60px;">
 			<img src="img/parmita.jpeg" height="200">
 			<br>
 			Parmita Mehta
 		</div>
+		-->
+	</section>
+
+	<section>
+		<h2>The IXI dataset</h2>
+		<p>~700 subjects</p>
+		<p>Three different scanners</p>
+		<p> Several different MRI modailities</p>
+		<p> Preprocessed and co-registered </p>
+		<a href="http://brain-development.org/ixi-dataset/">http://brain-development.org/ixi-dataset/</a>
+		<p class="fragment">=> What is the correspondence between different imaging contrasts?</p>
+	</section>
+
+	<section>
+		<h2> Image contrasts</h2>
+		<img src="img/t1_t2.png" height="400">
+	</section>
+
+	<section>
+		<h2> Image contrasts</h2>
+		<img src="./img/t2t1_rsquared.png">
+
 	</section>
 
 	<section>
@@ -173,6 +197,7 @@
 	</section>
 	-->
 
+
 	<section>
 		<h2> Convolutional networks</h2>
 		<p class="fragment">A way to reduce the number of parameters</p>
@@ -214,13 +239,14 @@
 		</div>
 	</section>
 	-->
+	<!--
 	<section>
 		<img src="img/neural-network.png">
 		<div class=cite>
 			<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
 		</div>
 	</section>
-
+	-->
 	<section>
 		<img src="img/imagenet-fig4l.png">
 		<div class=cite>
@@ -410,13 +436,6 @@
 		</div>
 	</section>
 	-->
-		<section>
-			<h2>The IXI dataset</h2>
-			<p>~700 subjects</p>
-			<p> Several different MRI modailities</p>
-			<p> Preprocessed and co-registered </p>
-				<a href="http://brain-development.org/ixi-dataset/">http://brain-development.org/ixi-dataset/</a>
-		</section>
 	<section>
 		<h4>MRI => MRI </h4>
 		<video width="800" autoplay loop>
@@ -445,6 +464,7 @@
 	</section>
 
 	<section>
+		<h3>1.5T MRI => 3T MRI</h3>
 		<img src="img/t2t1_model_comparison_with_generalization.png">
 	</section>
 	<section>
@@ -461,7 +481,7 @@
 	</section>
 
 	<section>
-		<h4>Summary</h4>
+		<h2>Summary</h2>
 		<p class="fragment">Convolutional neural networks can be used for cross-modal image synthesis</p>
 		<p class="fragment">Useful for image registration</p>
 		<p class="fragment">But more questions that conclusions: </p>
@@ -478,7 +498,7 @@
 	</section>
 
 	<section>
-		<h2>Build your own brain observatory</h2>
+		<h2>Challenge: data sharing </h2>
 		<p class="fragment">A lot of data has already been collected</p>
 		<p class="fragment">But sharing data is:</p>
 		<p class="fragment">Not incentivized</p>
@@ -837,6 +857,21 @@
 
 	</section>
 
+	<section>
+		<h2>Summary</h2>
+		<p class="fragment">Data visualization tools</p>
+		<p class="fragment">Exploratory data analysis</p>
+		<p class="fragment">Automated data sharing</p>
+		<p class="fragment">Dimensionality reduced data in tidy table format</p>
+	</section>
+
+	<section>
+		<h2>Future applications</h2>
+		<p>Other analysis pipelines</p>
+		<p>Dimensionality reduction in multi-channel neural recordings</p>
+		<p>Neurodata without Borders (<a href="https://www.cell.com/neuron/fulltext/S0896-6273(15)00919-8">Teeters et al. (2015)</a>)</p>
+	</section>
+
 
 	<section id="afq-insight">
 	<h2>Challenge: data-driven discovery in dMRI</h2>
@@ -938,10 +973,25 @@
 	</section>
 
 	<section>
-		<h2>Challenge: Methods that work in standard datasets may fail in Big Data</h2>
-		<h3 class="fragment">Research protocols that require expert examination</h3>
-		<h3 class="fragment">Time consuming, tedious</h3>
-		<h3 class="fragment">=> Do not scale well!</h3>
+	<h2>Summary</h2>
+		<p class="fragment">Sparse Group Lasso accurately discovers structure in dMRI data</p>
+		<p class="fragment">Classification of disease states</p>
+		<p class="fragment">In a regression setting, prediction of continuous measures <br> (e.g, "brain age", IQ, reading skills)</p>
+	</section>
+
+	<section>
+		<h2>Future applications</h2>
+		<p>Multi-region, multi-neuron recordings</p>
+		<p>Neurons => features</p>
+		<p>Brain regions => groups</p>
+		<p>Trials => observations</p>
+	</section>
+
+		<section>
+		<h4>Challenge: Methods that work in standard datasets may fail in Big Data</h4>
+		<p class="fragment">Research protocols that require expert examination</p>
+		<p class="fragment">Time consuming, tedious</p>
+		<p class="fragment">=> Do not scale well!</p>
 	</section>
 
 
@@ -962,9 +1012,9 @@
 
 	<section>
 		<h2>The solution</h2>
-		<h3 class="fragment">Train machine learning algorithms</h3>
-		<h3 class="fragment">But: for many tasks, not enough training data</h3>
-		<h3 class="fragment">=> Amplify labeled data-sets with citizen science</h3>
+		<p class="fragment">Train machine learning algorithms</p>
+		<p class="fragment">But: for many tasks, not enough training data</p>
+		<p class="fragment">=> Amplify labeled data-sets with citizen science</p>
 
 	</section>
 
@@ -1060,6 +1110,20 @@
 			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & Rokem (in prep)</a>
 		</div>
 	</section>
+
+
+	<section>
+		<h2>Summary</h2>
+		<p>Citizen scientists can scale up tasks requiring expertise</p>
+		<p>Model of expertise for aggregation</p>
+		<p>Model of perception (neural network) for automation</p>
+	</section>
+
+		<section>
+			<h2>Future applications</h2>
+			<p class="fragment">MRI tumor segmentation</p>
+			<p class="fragment">Other image annotation tasks (e.g., OIR)</p>
+		</section>
 
 	<!--
 
