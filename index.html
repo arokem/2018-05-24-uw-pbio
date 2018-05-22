@@ -61,7 +61,7 @@
 	</section>
 
 
-	<section data-background-image="./img/CompSci-X5.jpg" data-background-size="cover" style="background: rgba(255, 255, 255, 0.8);">
+	<section data-background-image="./img/portage-bay.jpg" data-background-size="cover" style="background: rgba(255, 255, 255, 0.8);">
 		<blockquote>
 			<img src="img/eScience.png" width="800px">
 			<small><em>"All across our campus, the process of discovery will increasingly rely on researchers’ ability to extract knowledge from vast amounts of data... In order to remain at the forefront, UW must be a leader in advancing these techniques and technologies, and in making [them] accessible to researchers in the broadest imaginable range of fields"</em></small>
@@ -95,12 +95,20 @@
 
 	<section>
 		<h2>Challenges</h2>
-		<p class="fragment">Interpretation challenges</p>
-		<p class="fragment">Existing sociotechnical structures are strained <br> (publication, collaboration, training)</p>
-		<p class="fragment">Methods that work in standard use may fail in large datasets</p>
-		<p class="fragment">Large-scale analysis requires large-scale computation</p>
+		<p class="fragment">Methods that work in standard use may not apply to large datasets</p>
+		<p class="fragment">Tools are needed for data exploration and transparent sharing of results</p>
+		<p class="fragment">Algorithms are needed to extract information from complex high-dimensional data</p>
 	</section>
 
+
+	<section>
+		<h2> Sociotechnical structures are strained </h2>
+		<p> Collaboration</p>
+		<p> Publication
+		<p> Training</p>
+
+	</section>
+	<!--
 	<section>
 		<h3>Opportunity: learning from large-scale datasets</h3>
 		<div style="position: absolute; left:260px; top:60px;">
@@ -114,13 +122,12 @@
 			Aaron Lee
 		</div>
 
-		<!--
 		<div style="position: absolute; left:375px; top:60px;">
 			<img src="img/parmita.jpeg" height="200">
 			<br>
 			Parmita Mehta
 		</div>
-		-->
+
 	</section>
 
 	<section>
@@ -130,7 +137,7 @@
 		<p> Several different MRI modailities</p>
 		<p> Preprocessed and co-registered </p>
 		<a href="http://brain-development.org/ixi-dataset/">http://brain-development.org/ixi-dataset/</a>
-		<p class="fragment">=> What is the correspondence between different imaging contrasts?</p>
+		<p class="fragment">Can we find the correspondence between imaging contrasts?</p>
 	</section>
 
 	<section>
@@ -176,7 +183,6 @@
 			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
 		</div>
 	</section>
-	<!--
 
 	<section>
 		<h2> Artificial neural networks</h2>
@@ -195,13 +201,11 @@
 			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
 		</div>
 	</section>
-	-->
 
 
 	<section>
 		<h2> Convolutional networks</h2>
-		<p class="fragment">A way to reduce the number of parameters</p>
-		<p class="fragment">Capitalizes on spatial correlations in images</p>
+		<p class="fragment">Capitalize on spatial correlations in images</p>
 		<p class="fragment">Inspired by the mammalian visual system</p>
 
 		<div class="cite">
@@ -226,7 +230,7 @@
 			<a href="https://arxiv.org/abs/1603.07285">Dumoulin and Visin (2016)</a>
 		</div>
 	</section>
-	<!--
+
 	<section>
 		<div style="position: absolute; left:10px; top:10px;">
 			<img src="img/wall.png" height=250px;>
@@ -238,15 +242,12 @@
 			<img src="img/vertical_wall.png" height=220px;>
 		</div>
 	</section>
-	-->
-	<!--
 	<section>
 		<img src="img/neural-network.png">
 		<div class=cite>
 			<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
 		</div>
 	</section>
-	-->
 	<section>
 		<img src="img/imagenet-fig4l.png">
 		<div class=cite>
@@ -254,7 +255,6 @@
 		</div>
 	</section>
 
-	<!--
 	<section>
 		<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
 			High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
@@ -354,7 +354,6 @@
 			<a href="https://www.biorxiv.org/content/early/2018/05/08/316349">Mehta et al. (2016)</a>
 		</div>
 	</section>
-	-->
 
 	<section>
 		<h2>Fully convolutional networks</h2>
@@ -362,7 +361,6 @@
 		Take an image as input and produce an image as output
 
 
-<!--
 	<section>
 		<img src="img/unet-architecture.png" height=500px>
 		<div class=cite>
@@ -410,7 +408,7 @@
 				</small>
 			</div>
 	</section>
-	-->
+
 
 		<img src="img/UNET.png">
 
@@ -420,7 +418,7 @@
 
 	</section>
 
-	<!--
+
 	<section>
 		<h4>OCT => OCTA </h4>
 		<img src="img/oct2octa.png" height=500px>
@@ -435,7 +433,7 @@
 			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
 		</div>
 	</section>
-	-->
+
 	<section>
 		<h4>MRI => MRI </h4>
 		<video width="800" autoplay loop>
@@ -472,7 +470,7 @@
 
 	</section>
 	<section>
-		<h3>How well does this generalize?</h3>
+		<h3>Does it generalize?</h3>
 	</section>
 
 	<section>
@@ -499,11 +497,8 @@
 
 	<section>
 		<h2>Summary</h2>
-		<p class="fragment">Convolutional neural networks can be used for cross-modal image synthesis</p>
+		<p class="fragment">Convolutional neural networks can be used for cross-modal MR image synthesis</p>
 		<p class="fragment">Useful for image registration</p>
-		<p class="fragment">But more questions that conclusions: </p>
-		<p class="fragment">What is it learning?</p>
-		<p class="fragment">Can it tell us anything new about the physics of contrast mechanisms?</p>
 
 	</section>
 
@@ -513,9 +508,232 @@
 		<p class="fragment"> Transcriptomic imaging </p>
 		<p class="fragment"> Digital histology</p>
 	</section>
+	-->
 
 	<section>
-		<h2>Challenge: data sharing </h2>
+		<h4>Challenge: Methods that work in standard datasets may fail in Big Data</h4>
+		<p class="fragment">Research protocols that require expert examination</p>
+		<p class="fragment">Time consuming, tedious</p>
+		<p class="fragment">=> Do not scale well!</p>
+	</section>
+
+
+	<section>
+		<h2>Scaling expertise with citizen science</h2>
+		<div style="position: absolute; left:200px; top:60px;">
+			<img src="img/anisha.jpg" height="300">
+			<br>
+			Anisha Keshavan
+		</div>
+
+		<div style="position: absolute; left:420px; top:60px;">
+			<img src="img/jason.jpg" height="300">
+			<br>
+			Jason Yeatman
+		</div>
+	</section>
+
+	<section>
+		<h2>The solution</h2>
+		<p class="fragment">Train machine learning algorithms</p>
+		<p class="fragment">But: for many tasks, not enough training data</p>
+		<p class="fragment">=> Amplify labeled data-sets with citizen science</p>
+
+	</section>
+
+	<section>
+		<h2>Example</h2>
+		<h3 >Quality control of T1-weighted images</h3>
+		<img src="img/t1_qc.png" height="300">
+		<div class="cite">
+			<a href="https://www.nature.com/articles/sdata2017181">Human Brain Network <br>(Alexander et al. 2017)</a>
+		</div>
+	</section>
+
+	<section>
+		<h4><a href="https://braindr.us">https://braindr.us</a></h4>
+
+		<img src="img/braindr.gif">
+
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+
+	</section>
+
+	<section>
+		<h2>Braindr</h2>
+		<div style="position: absolute; left:200px; top:10px;">
+			<blockquote class="twitter-tweet" data-lang="en">
+				<p lang="en" dir="ltr">Are you at work but feel like playing Tinder? Why not play braindr (<a href="https://t.co/yXw191Q7Hy">https://t.co/yXw191Q7Hy</a>) instead, and help neuroscientists rate the quality of brain images? Swipe left to fail bad quality images! Built with <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a> and <a href="https://twitter.com/Firebase?ref_src=twsrc%5Etfw">@Firebase</a> <a href="https://twitter.com/hashtag/citizenscience?src=hash&amp;ref_src=twsrc%5Etfw">#citizenscience</a> <a href="https://t.co/tpI9Y3UKOb">pic.twitter.com/tpI9Y3UKOb</a></p>&mdash; anisha (@akeshavan_)
+				<a href="https://twitter.com/akeshavan_/status/961385285182353408?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<div class="cite">
+			<a href="">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Multiple ratings per image</h2>
+		<img src="img/braindr_ratings_per_img.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+
+	</section>
+
+	<section>
+		<h2>But often, no agreement</h2>
+		<img src="img/braindr_average_rating.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_rater_importance.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_rater_importance_per_trials.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_xgboost_ratings.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+
+
+	<section>
+		<h2>Aggregating across raters</h2>
+		<img src="img/braindr_xgboost_results.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>How do we scale this up?</h2>
+	</section>
+
+	<section>
+		<h2>Artificial neural networks</h2>
+		<p class="fragment">A family of machine learning algorithms</p>
+		<p class="fragment">Biologically inspired</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+
+		<h2>Artificial neural networks</h2>
+		<img src="img/minsky_papert.png">
+		<div class="cite">Minsky and Papert (1969)</div>
+	</section>
+
+	<section>
+		<h2> Artificial neural networks</h2>
+		<p>A family of machine learning algorithms</p>
+		<p>Biologically inspired</p>
+		<p class="fragment">Implement a cascade of linear/non-linear operations</p>
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/simple-network.png">
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2> Convolutional networks</h2>
+		<p class="fragment">Capitalize on spatial correlations in images</p>
+		<p class="fragment">Inspired by the mammalian visual system</p>
+
+		<div class="cite">
+			<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>
+
+	</section>
+
+	<section>
+		<img src="img/bosking.jpg" height=500>
+
+		<div class="cite">
+			<a href="http://www.jneurosci.org/content/17/6/2112.long">Bosking et al. 1997</a>
+		</div>
+
+	</section>
+
+	<section>
+		<img src="img/convolution_animation.gif">
+
+		<div class="cite">
+			<a href="https://arxiv.org/abs/1603.07285">Dumoulin and Visin (2016)</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="img/imagenet-fig4l.png">
+		<div class=cite>
+			<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Scaling expertise using citizen scientist ratings</h2>
+		<img src="img/braindr_learning_curves.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Scaling expertise using citizen scientist ratings</h2>
+		<img src="img/braindr_final_rocs.png" height="500">
+		<div class="cite">
+			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Summary</h2>
+		<p>Scaling up expertise with citizen scientists</p>
+		<p>Model of expertise (random forest) for aggregation</p>
+		<p>Model of perception (neural network) for automation</p>
+	</section>
+
+	<section>
+		<h2>Future applications</h2>
+		<p class="fragment">MRI tumor segmentation</p>
+		<p class="fragment">Other image annotation tasks</p>
+	</section>
+
+
+	<section>
+		<h3>Challenge: tools for exploration of complex data</h3>
 		<p class="fragment">A lot of data has already been collected</p>
 		<p class="fragment">But sharing data is:</p>
 		<p class="fragment">Not incentivized</p>
@@ -783,7 +1001,7 @@
 	</section>
 
 	<section id="afq-browser">
-		<h2>Challenge: improve data sharing</h2>
+		<h2>Challenge: improved data sharing</h2>
 		<div style="position: absolute; left:70px; top:60px;">
 			<img src="img/jason.jpg" height="200">
 			<br>
@@ -892,12 +1110,11 @@
 		<h2>Future applications</h2>
 		<p>Other analysis pipelines</p>
 		<p>Dimensionality reduction in multi-channel neural recordings</p>
-		<p>Neurodata without Borders (<a href="https://www.cell.com/neuron/fulltext/S0896-6273(15)00919-8">Teeters et al. (2015)</a>)</p>
 	</section>
 
 
 	<section id="afq-insight">
-	<h2>Opportunity: data-driven discovery in dMRI</h2>
+	<h3>Opportunity: data-driven discovery</h3>
 	<div style="position: absolute; left:40px; top:80px;">
 	<img src="img/adam.jpeg" height="300">
 		<br>
@@ -917,7 +1134,7 @@
 
 
 	<section>
-		<h2>Data-driven approach</h2>
+		<h2>Diffusion MRI data has group structure</h2>
 		<img src="img/sgl_design.png" height="500px">
 	</section>
 
@@ -931,7 +1148,7 @@
 		<h2>The Lasso</h2>
 		<img src="img/lasso_penalty.png" width="400px">
 		<p class="fragment">Enforces sparsity</p>
-		<p class="fragment">But the standard lasso ignores the known structure in the data</p>
+		<p class="fragment">But ignores group structure in the data</p>
 		<p class="fragment">Accuracy: ~71% (AUC: ~71%, precision: ~68%)</p>
 		<p class="fragment">Does not discover the right features</p>
 		<p class="fragment">Top 10 features include some CST, but also other parts of the brain</p>
@@ -956,8 +1173,8 @@
 		<h2>Sparse Group Lasso</h2>
 		<img src="img/sparse_group_lasso_penalty.png" width="600px">
 		<p class="fragment">Enforces sparsity both at the group level and the within-group level</p>
-		<p class="fragment">Subsumes the Group Lasso (&lambda;<sub>1</sub> = 0)</p>
-		<p class="fragment">And standard Lasso (&lambda;<sub>2</sub> = 0)</p>
+		<p class="fragment">Subsumes the Lasso (&lambda;<sub>1</sub> = 0)</p>
+		<p class="fragment">And the Group Lasso (&lambda;<sub>2</sub> = 0)</p>
 		<p class="fragment">But more meta-parameters</p>
 		<div class="cite">
 			<a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2012.681250">Simon et al. (2013)</a>
@@ -986,9 +1203,10 @@
 	</section>
 
 	<section>
-		<h2> In Sarica et al.'s data</h2>
+		<h2> Accurate classification and feature detection</h2>
 		<img src="img/sgl_result.png">
-		<p class="fragment">=> Classification accuracy of ~84%, AUC of 0.9 </p>
+		<p>Classification accuracy of ~84%, AUC of 0.9 </p>
+		<p>Top 10 features selected include CST</p>
 		<div class="cite">
 			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
 		</div>
@@ -1005,157 +1223,13 @@
 	<section>
 		<h2>Future applications</h2>
 		<p>Multi-region, multi-neuron recordings</p>
+		<div class="fragment">
 		<p>Neurons => features</p>
 		<p>Brain regions => groups</p>
 		<p>Trials => observations</p>
-	</section>
-
-		<section>
-		<h4>Challenge: Methods that work in standard datasets may fail in Big Data</h4>
-		<p class="fragment">Research protocols that require expert examination</p>
-		<p class="fragment">Time consuming, tedious</p>
-		<p class="fragment">=> Do not scale well!</p>
-	</section>
-
-
-	<section>
-		<h2>Scaling expertise with citizen science</h2>
-		<div style="position: absolute; left:200px; top:60px;">
-		<img src="img/anisha.jpg" height="300">
-			<br>
-			Anisha Keshavan
-		</div>
-
-		<div style="position: absolute; left:420px; top:60px;">
-			<img src="img/jason.jpg" height="300">
-			<br>
-			Jason Yeatman
 		</div>
 	</section>
 
-	<section>
-		<h2>The solution</h2>
-		<p class="fragment">Train machine learning algorithms</p>
-		<p class="fragment">But: for many tasks, not enough training data</p>
-		<p class="fragment">=> Amplify labeled data-sets with citizen science</p>
-
-	</section>
-
-	<section>
-		<h2>Example</h2>
-		<h3 >Quality control of T1-weighted images</h3>
-		<img src="img/t1_qc.png" height="300">
-		<div class="cite">
-			<a href="https://www.nature.com/articles/sdata2017181">Human Brain Network <br>(Alexander et al. 2017)</a>
-		</div>
-	</section>
-
-	<section>
-		<h4><a href="https://braindr.us">https://braindr.us</a></h4>
-
-		<img src="img/braindr.gif">
-
-		<div class="cite">
-			<a href="">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-
-	</section>
-
-	<section>
-		<h2>Braindr</h2>
-		<div style="position: absolute; left:200px; top:10px;">
-		<blockquote class="twitter-tweet" data-lang="en">
-			<p lang="en" dir="ltr">Are you at work but feel like playing Tinder? Why not play braindr (<a href="https://t.co/yXw191Q7Hy">https://t.co/yXw191Q7Hy</a>) instead, and help neuroscientists rate the quality of brain images? Swipe left to fail bad quality images! Built with <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a> and <a href="https://twitter.com/Firebase?ref_src=twsrc%5Etfw">@Firebase</a> <a href="https://twitter.com/hashtag/citizenscience?src=hash&amp;ref_src=twsrc%5Etfw">#citizenscience</a> <a href="https://t.co/tpI9Y3UKOb">pic.twitter.com/tpI9Y3UKOb</a></p>&mdash; anisha (@akeshavan_)
-			<a href="https://twitter.com/akeshavan_/status/961385285182353408?ref_src=twsrc%5Etfw">February 7, 2018</a></blockquote>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		<div class="cite">
-			<a href="">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Multiple ratings per image</h2>
-		<img src="img/braindr_ratings_per_img.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-
-	</section>
-
-	<section>
-		<h2>But often, no agreement</h2>
-		<img src="img/braindr_average_rating.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_rater_importance.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-		<section>
-			<h2>Aggregating across raters</h2>
-			<img src="img/braindr_rater_importance_per_trials.png" height="500">
-			<div class="cite">
-				<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-			</div>
-		</section>
-
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_xgboost_ratings.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-
-
-	<section>
-		<h2>Aggregating across raters</h2>
-		<img src="img/braindr_xgboost_results.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-	<section>
-		<h2>Scaling expertise using citizen scientist ratings</h2>
-		<img src="img/braindr_learning_curves.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-
-	<section>
-		<h2>Scaling expertise using citizen scientist ratings</h2>
-		<img src="img/braindr_final_rocs.png" height="500">
-		<div class="cite">
-			<a href="https://akeshavan.github.io/braindr-results/#/">Keshavan, Yeatman & <br> Rokem (<em>in prep</em>)</a>
-		</div>
-	</section>
-
-
-	<section>
-		<h2>Summary</h2>
-		<p>Citizen scientists can scale up tasks requiring expertise</p>
-		<p>Model of expertise for aggregation</p>
-		<p>Model of perception (neural network) for automation</p>
-	</section>
-
-		<section>
-			<h2>Future applications</h2>
-			<p class="fragment">MRI tumor segmentation</p>
-			<p class="fragment">Other image annotation tasks (e.g., OIR)</p>
-		</section>
 
 	<!--
 
@@ -1204,12 +1278,35 @@
 	<section>
 
 	<h2>Sociotechnical challenges</h2>
-	Open source software
-	Training
+		<p> Reproducibility</p>
+
+		<p> Collaboration</p>
+
+		<p>Training</p>
 	</section>
 
 	<section>
-		<h2>Open source software for science</h2>
+	<h2>Open source software for science</h2>
+		<img src="img/dipy-logo.png">
+		<br>
+		Diffusion Imaging in Python
+	</section>
+
+	<section>
+		<img src="img/contributors.png">
+	</section>
+
+	<section>
+		<img src="img/dipy_global.png">
+	</section>
+
+	<section>
+		<a href="http://joss.theoj.org/"></a><img src="img/JOSS_banner.png" height="300"></a>
+		<h3>Rigorously evaluate open source software</h3>
+		<h3>Provide a canonical citation for software that meets these standards</h3>
+		<div class="cite">
+			<a href="https://peerj.com/articles/cs-147/">Niemeyer et al. (2018)</a>
+		</div>
 	</section>
 
 	<section>
@@ -1234,6 +1331,11 @@
 		-->
 	</section>
 
+	<section>
+		<h2>Neurohackademy</h2>
+		<img src="img/joy_of_hacking.png">
+
+	</section>
 
 	<section>
 		<h2>Conclusions</h2>
